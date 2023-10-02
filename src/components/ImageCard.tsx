@@ -6,11 +6,11 @@ type cardProps = {
   };
 export default function ImageCard({ title, imageUrl }: cardProps){
   return (
-    <div className="items-center justify-center mx-auto max-w-xl lg:py-24 sm:py-10">
+    <div className="mx-auto max-w-xl lg:py-24 sm:py-10 sm:w-full">
   <img
     src={imageUrl}
     alt={title}
-    className="hidden sm:block rounded overflow-hidden shadow-sm max-w-full w-auto h-auto"
+    className="w-full hidden sm:block "
   />
 </div>
 
