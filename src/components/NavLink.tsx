@@ -5,11 +5,21 @@ type NavProps = {
 export default function NavLink({ className }: NavProps) {
   return (
     <nav className={className}>
-      <a href="/">Home</a>
-      <a href="#about">About</a>
-      <a href="#experience">Work</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="/" className="navLink">
+        Home
+      </a>
+      <a href="#about" className="navLink">
+        About
+      </a>
+      <a href="#experience" className="navLink">
+        Work
+      </a>
+      <a href="#projects" className="navLink">
+        Projects
+      </a>
+      <a href="#contact" className="navLink">
+        Contact
+      </a>
     </nav>
   );
 }

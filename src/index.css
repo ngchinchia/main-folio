@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 @layer components {
-  .heroButton {
-    @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-gray-500 transition-all 
-    hover:border-[#64CCC5] hover:text-[#64CCC5];
+  .navLink {
+    @apply text-slate-950 font-medium rounded-full transition-all hover:text-[#4831d4] hover:underline hover:underline-offset-8 duration-200;
   }
   .socialIcon {
-    @apply rounded-full 
+    @apply bg-transparent text-slate-950 hover:text-[#4831d4] cursor-pointer 
+  }
+  .skillsIcon {
+    @apply bg-[#4831d4] bg-opacity-60 text-center rounded-full px-3 py-1 text-sm font-semibold text-slate-950 w-[auto] truncate
   }
 }
+

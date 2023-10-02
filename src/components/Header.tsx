@@ -12,7 +12,8 @@ export default function Header() {
   };
 
   return (
-    <header className="flex sticky top-0 p-5 justify-between max-w-7xl mx-auto md:items-center">
+   
+    <header className="flex sticky top-0 p-5 justify-between max-w-7xl mx-auto md:items-center z-50">
       <motion.div
         initial={{
           x: -500,
@@ -33,13 +34,13 @@ export default function Header() {
           url={"https://www.linkedin.com/in/ng-chin-chia-90699124b/"}
           fgColor="currentColor"
           bgColor="transparent"
-          className="messageIcon"
+          className="socialIcon"
         />
         <SocialIcon
           url={"https://github.com/ngchinchia"}
           fgColor="currentColor"
           bgColor="transparent"
-          className="messageIcon"
+          className="socialIcon"
         />
       </motion.div>
 
@@ -59,7 +60,7 @@ export default function Header() {
         }}
       >
         {/* For Large Screen */}
-        <NavLink className="hidden md:flex w-full space-x-4" />
+        <NavLink className="hidden md:flex w-full space-x-7 tracking-[3px]" />
 
         {/* For Mobile Screen */}
         <div className="md:hidden pt-2">
@@ -68,7 +69,7 @@ export default function Header() {
         {/* If menu is clicked, render mobile menu page */}
         {isOpen && (
           <div
-            className="fixed inset-0 bg-[#FFF5EE] bg-opacity-100"
+            className="fixed inset-0 bg-[#f6f7f8] bg-opacity-100"
             onClick={toggleNavbar}
           >
             <button className="absolute top-0 right-0 mt-5 mr-5">

@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div>
+    <div className="h-screen scroll-smooth scroll-m-11 snap-y snap-mandatory overflow-y-scroll overflow-x-hidden duration-700">
       <Header />
       <section id="/" className="snap-start">
         <Home />

@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 interface ScreenContainerProps {
-  title: string; // Define the type of the title prop
+  title?: string; // Define the type of the title prop
   children: ReactNode; 
 }
 
