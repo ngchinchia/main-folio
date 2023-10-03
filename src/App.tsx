@@ -6,7 +6,6 @@ import WorkExperience from "./pages/WorkExperience";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
-
 function App() {
   return (
     <div className="h-screen scroll-smooth scroll-m-11 snap-y snap-mandatory overflow-y-scroll overflow-x-hidden duration-700">
@@ -21,13 +20,12 @@ function App() {
         <WorkExperience />
       </section>
       <section id="projects" className="snap-start">
-        <Projects/>
+        <Projects />
       </section>
       <section id="contact" className="snap-start">
-        <Contact/>
+        <Contact />
       </section>
     </div>
-   
   );
 }
 

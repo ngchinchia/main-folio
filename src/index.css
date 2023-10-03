@@ -1,6 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Custom CSS for the float animation */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-image {
+  animation: floatUpDown 2s infinite;
+  transform-origin: center;
+  @apply mx-auto 2xl:max-w-xl xl:max-w-xl lg:max-w-md md:max-w-sm sm:max-w-sm max-w-sm lg:py-24 sm:py-10 sm:w-full mt-10
+}
 
 @layer components {
   .navLink {
