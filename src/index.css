@@ -14,6 +14,7 @@
   }
 }
 
+
 .floating-image {
   animation: floatUpDown 2s infinite;
   transform-origin: center;
