@@ -44,7 +44,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="max-w-sm xl:h-5/6 lg:h-5/6 md:h-5/6 h-1/5 mx-auto px-5 py-2 border border-[#4831d4] rounded-xl">
+        <div className="max-w-sm xl:h-5/6 lg:h-4/6 md:h-3/6 h-1/5 mx-auto px-5 py-2 border border-[#4831d4] rounded-xl">
           <img
             src={profile}
             alt="profile-img"
