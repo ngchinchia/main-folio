@@ -1,6 +1,6 @@
 import ScreenContainer from "../components/ScreenContainer";
-import ImageCard from "../components/ImageCard";
 import profile from "../assets/profile.jpg";
+
 
 // type Props = {};
 
@@ -10,8 +10,8 @@ export default function About() {
       
       <div className="flex flex-col lg:flex-row justify-evenly">
         <div className="flex-col py-10 px-10 max-w-lg lg:w-1/2 items-center inline-block">
-          <h1 className="2xl:text-3xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-xl font-bold underline whitespace-nowrap">
-            <span className="text-[#4831d4] 2xl:text-3xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-xl">
+          <h1 className="text-2xl font-bold underline whitespace-nowrap">
+            <span className="text-[#4831d4] text-2xl">
               02-
             </span>
             <span className="tracking-[3px]"> About Me</span>
@@ -49,7 +49,7 @@ export default function About() {
             src={profile}
             alt="profile-img"
             className="w-full h-full  rounded-xl brightness-50 hover:brightness-100 hover:-translate-y-10 hover:-translate-x-10 transition-transform duration-500 ease-in-out -translate-y-5 -translate-x-8"
-            // Adjust the brightness value as needed (0.5 makes it 50% darker)
+
           />
         </div>
       </div>
