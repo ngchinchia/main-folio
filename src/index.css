@@ -29,7 +29,7 @@
     @apply bg-transparent text-slate-950 hover:text-[#4831d4] cursor-pointer 
   }
   .skillsIcon {
-    @apply bg-[#4831d4] bg-opacity-60 text-center rounded-full px-3 py-1 text-sm font-semibold text-slate-950 w-[auto] truncate
+    @apply bg-[#4831d4] uppercase bg-opacity-60 text-center rounded-full px-3 py-1 text-[0.7rem] font-semibold text-slate-950 w-[auto] truncate
   }
 }
 

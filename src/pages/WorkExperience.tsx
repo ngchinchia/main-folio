@@ -5,6 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experienceData } from "../data/data";
+import Title from "../components/Title";
 import React from "react";
 
 // type Props = {};
@@ -12,16 +13,12 @@ import React from "react";
 export default function WorkExperience() {
   return (
     <ScreenContainer className="h-screen flex flex-col text-center max-w-7xl px-10 justify-center py-20 mx-auto items-center">
-      <h1 className="text-2xl font-bold underline whitespace-nowrap py-5">
-            <span className="text-[#4831d4] text-2xl">
-              03-
-            </span>
-            <span className="tracking-[3px]"> Work Experience</span>
-          </h1>
+     <Title className="text-2xl font-bold underline whitespace-nowrap py-5" sectionNumber="03-" title="Work Experience" />
       <VerticalTimeline  lineColor={"rgba(72, 49, 212, 0.5)"}>
         {experienceData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
+            className=" transition hover:scale-[1.04]"
               contentStyle={{
                 background: "#e6e7e8",
                 borderColor:"#4831d4",
@@ -34,6 +31,7 @@ export default function WorkExperience() {
                 borderRight: "0.4rem solid #4831d4"
               }}
               date={item.date}
+              dateClassName={"text-[#4831d4]"}
               icon={item.icon}
               iconStyle={{
                 background: "#e6e7e8",
