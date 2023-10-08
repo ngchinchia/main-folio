@@ -1,10 +1,19 @@
 import { motion } from "framer-motion";
 import ImageCard from "../components/ImageCard";
 import ScreenContainer from "../components/ScreenContainer";
+import React from "react";
 
 export default function Home() {
+  const handleDownload = () => {
+    const fileUrl = process.env.PUBLIC_URL + "/ngchinchia-resume.pdf";
+
+    const a = document.createElement("a");
+    a.href = fileUrl;
+    a.download = "ngchinchia-resume.pdf";
+    a.click();
+  };
   return (
-    <ScreenContainer className=" min-h-fit flex flex-col text-center max-w-7xl px-10 justify-center py-20 mx-auto items-center">
+    <ScreenContainer className="min-h-fit flex flex-col text-center max-w-7xl px-10 justify-center py-20 mx-auto items-center">
       <motion.div
         initial={{
           y: 500,
@@ -40,7 +49,10 @@ export default function Home() {
                     Contact
                   </button>
                 </a>
-                <button className="bg-slate-50 hover:bg-[#4831d4] hover:bg-opacity-60 text-slate-950 font-bold py-2 px-4 border border-[#888888] rounded">
+                <button
+                  onClick={handleDownload}
+                  className="bg-slate-50 hover:bg-[#4831d4] hover:bg-opacity-60 text-slate-950 font-bold py-2 px-4 border border-[#888888] rounded"
+                >
                   Download CV
                 </button>
               </div>

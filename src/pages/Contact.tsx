@@ -3,12 +3,9 @@ import React, { useState } from "react";
 import Title from "../components/Title";
 import { motion } from "framer-motion";
 
-
-
-
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
- 
+
   const handleSubmit = (event: any) => {
     event.preventDefault(); // Prevent the default form submission behavior
     const formData = new FormData(event.target);
@@ -23,10 +20,8 @@ export default function Contact() {
     setSubmitted(true);
     console.log(email, message);
 
-
     event.target.reset();
   };
-
 
   return (
     <ScreenContainer className="h-screen flex flex-col text-center w-[min(100%, 38rem)] px-10 mb-20 sm:mb-28 justify-center py-20 mx-auto items-center">
