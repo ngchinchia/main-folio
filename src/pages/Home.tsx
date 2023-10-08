@@ -4,7 +4,7 @@ import ScreenContainer from "../components/ScreenContainer";
 
 export default function Home() {
   return (
-    <ScreenContainer className="h-screen flex flex-col text-center max-w-7xl px-10 justify-center py-20 mx-auto items-center">
+    <ScreenContainer className=" min-h-fit flex flex-col text-center max-w-7xl px-10 justify-center py-20 mx-auto items-center">
       <motion.div
         initial={{
           y: 500,
@@ -20,7 +20,7 @@ export default function Home() {
           duration: 1.5,
         }}
       >
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row 2xl:mt-0 xl:mt-5 lg:mt-6 md:mt-7 sm:mt-15">
           <div className="lg:sticky mx-auto lg:top-20 lg:left-24 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 px-24 space-y-2">
             <div className="min-w-fit inline-block">
               <h1 className="text-3xl font-extrabold tracking-tight text-slate-950 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl whitespace-nowrap">

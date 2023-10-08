@@ -45,7 +45,7 @@ export default function Contact() {
         }}
       >
         <Title
-          className="text-2xl font-bold underline whitespace-nowrap py-3"
+          className="text-2xl font-bold whitespace-nowrap py-3"
           sectionNumber="05-"
           title="Contact Me"
         />

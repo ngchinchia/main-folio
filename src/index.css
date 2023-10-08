@@ -17,8 +17,8 @@
 
 .floating-image {
   animation: floatUpDown 2s infinite;
-  transform-origin: center;
-  @apply mx-auto 2xl:max-w-xl xl:max-w-xl lg:max-w-md md:max-w-sm sm:max-w-sm max-w-sm lg:py-24 sm:py-10 sm:w-full mt-10
+
+  
 }
 
 @layer components {

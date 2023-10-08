@@ -12,8 +12,8 @@ import React from "react";
 
 export default function WorkExperience() {
   return (
-    <ScreenContainer className="h-screen flex flex-col text-center max-w-7xl px-10 justify-center py-20 mx-auto items-center">
-     <Title className="text-2xl font-bold underline whitespace-nowrap py-5" sectionNumber="03-" title="Work Experience" />
+    <ScreenContainer className=" max-h-full flex flex-col text-center max-w-7xl px-10 justify-center py-20 mx-auto items-center">
+     <Title className="text-2xl font-bold  whitespace-nowrap py-5 mt-30" sectionNumber="03-" title="Work Experience" />
       <VerticalTimeline  lineColor={"rgba(72, 49, 212, 0.5)"}>
         {experienceData.map((item, index) => (
           <React.Fragment key={index}>

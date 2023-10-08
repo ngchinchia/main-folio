@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <ScreenContainer className=" flex flex-col max-w-7xl px-10  py-20 mx-auto items-center">
       <Title
-        className="text-2xl font-bold underline whitespace-nowrap py-3"
+        className="text-2xl font-bold whitespace-nowrap py-3"
         sectionNumber="04-"
         title="Projects"
       />
@@ -66,7 +66,7 @@ function Project({
         <img
           src={imageUrl}
           alt="project"
-          className="sm:block md:hidden lg:hidden xl:hidden 2xl:hidden w-[10rem]"
+          className="sm:block md:hidden lg:hidden xl:hidden 2xl:hidden w-full"
         />
       </div>
     </div>
