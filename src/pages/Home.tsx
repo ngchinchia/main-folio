@@ -5,12 +5,14 @@ import React from "react";
 
 export default function Home() {
   const handleDownload = () => {
-    const fileUrl = process.env.PUBLIC_URL + "/ngchinchia-resume.pdf";
+    const fileUrl = process.env.PUBLIC_URL + "/Ng Chin Chia - Resume.pdf";
 
     const a = document.createElement("a");
     a.href = fileUrl;
     a.download = "ngchinchia-resume.pdf";
     a.click();
+
+    
   };
   return (
     <ScreenContainer className="min-h-fit flex flex-col text-center max-w-7xl px-10 justify-center py-20 mx-auto items-center">
