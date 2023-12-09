@@ -5,11 +5,11 @@ import React from "react";
 
 export default function Home() {
   const handleDownload = () => {
-    const fileUrl = process.env.PUBLIC_URL + "/Ng Chin Chia - Resume.pdf";
+    const fileUrl = process.env.PUBLIC_URL + "resume.pdf";
 
     const a = document.createElement("a");
     a.href = fileUrl;
-    a.download = "ngchinchia-resume.pdf";
+    a.download = "resume.pdf";
     a.click();
 
     
@@ -37,8 +37,8 @@ export default function Home() {
               <h1 className="text-3xl font-extrabold tracking-tight text-slate-950 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl whitespace-nowrap">
                 Ng Chin Chia
               </h1>
-              <h2 className="text-xl py-1 font-bold tracking-tight text-[#4831d4] text-opacity-60 2xl:text-3xl xl:text-3xl lg:text-3xl md:text-xl sm:text-xl whitespace-nowrap">
-                Frontend Developer
+              <h2 className="text-xl mt-3 py-1 font-bold tracking-tight text-[#4831d4] text-opacity-60 2xl:text-3xl xl:text-3xl lg:text-3xl md:text-xl sm:text-xl whitespace-nowrap">
+                Web & Mobile Developer
               </h2>
               <p className="text-slate-950 2xl:text-lg xl:text-lg lg:text-base md:text-base sm:text-base py-2">
                 I turn design visions into seamless web experiences. With a

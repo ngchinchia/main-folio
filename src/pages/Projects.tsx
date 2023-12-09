@@ -29,6 +29,7 @@ type ProjectProps = (typeof projectsData)[number];
 function Project({
   title,
   description,
+  tags,
   demoUrl,
   sourceCodeUrl,
   imageUrl,
@@ -40,18 +41,22 @@ function Project({
         alt="project"
         className="hidden md:block md:absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl hover:-translate-x-3 hover:trans-y-3 hover:-rotate-2 transition hover:scale-[1.04]"
       />
-      <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] space-y-3">
+      <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] space-y-2">
         <h3 className="text-xl font-semibold">{title}</h3>
+        <div className="flex space-x-2 pt-2">
+          {tags.map((i) => (
+            <span className="skillsIcon">{i}</span>
+          ))}
+        </div>
         <p className=" leading-relaxed text-gray-700 text-sm">{description}</p>
-        <div className="flex flex-wrap gap-2 sm:mt-auto">
+        <div className="flex flex-wrap gap-2">
           <a
             href={demoUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#4831d4] bg-opacity-60 px-6 py-3 text-[0.7rem] uppercase tracking-wider text-slate-950 font-semibold rounded-full hover:scale-[1.04] transition"
           >
-            {" "}
-            See Demo{" "}
+            See Demo
           </a>
           <a
             href={sourceCodeUrl}
@@ -59,8 +64,7 @@ function Project({
             rel="noopener noreferrer"
             className="bg-[#4831d4] bg-opacity-60 px-6 py-3 text-[0.7rem] uppercase tracking-wider text-slate-950 font-semibold rounded-full hover:scale-[1.04] transition"
           >
-            {" "}
-            Source Code{" "}
+            Source Code
           </a>
         </div>
         <img
