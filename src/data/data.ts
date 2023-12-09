@@ -2,6 +2,7 @@ import { Briefcase } from "lucide-react";
 import React from "react";
 import task from "../assets/taskmanagement.png";
 import brewbubble from "../assets/brewbubble2.png";
+import portfolio from "../assets/portfolio_website.png";
 import "react-vertical-timeline-component/style.min.css";
 
 export const experienceData = [
@@ -38,11 +39,20 @@ export const projectsData = [
   {
     title: "SimplyTask",
     description:
-      "I created a full-stack task management web application. Key features include CRUD operations and priority visualization. The project's goal is to provide an efficient and user-friendly task management solution for personal use.",
+      "Developed full-stack task management web application. Key features include CRUD operations and priority visualization. The project's goal is to provide an efficient and user-friendly task management solution for personal use.",
     tags: ["React", "TypeScript", "mySQL"],
     imageUrl: task,
     demoUrl:"https://main--verdant-khapse-68282c.netlify.app/", 
     sourceCodeUrl:"https://github.com/ngchinchia/taskmanager-frontend"
+  },
+  {
+    title: "My Portfolio",
+    description:
+      "Designed and developed a professional portfolio website using React and Tailwind enabled the creation of a visually appealing and responsive layout.",
+    tags: ["React", "TypeScript", "Tailwind"],
+    imageUrl: portfolio,
+    demoUrl:"https://ngchinchia.vercel.app/", 
+    sourceCodeUrl:"https://github.com/ngchinchia/main-folio"
   },
   {
     title: "Brew Bubble",
