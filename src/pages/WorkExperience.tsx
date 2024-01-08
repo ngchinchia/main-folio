@@ -46,7 +46,7 @@ export default function WorkExperience() {
               <p className="font-normal !mt-0 text-[#4831d4]">
                 {item.location}
               </p>
-              <div className="flex space-x-2 pt-2">
+              <div className="hidden md:flex space-x-2 pt-2">
                 {item.techstack.map((i) => (
                   <span className="skillsIcon">{i}</span>
                 ))}

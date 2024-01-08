@@ -7,6 +7,15 @@ import "react-vertical-timeline-component/style.min.css";
 
 export const experienceData = [
   {
+    title: "Fronend Developer Intern",
+    location: "GetStarStruck",
+    techstack: ['NextJS','Tailwind','Zustand','Framer'],
+    description:
+      "I am solely responsible for the frontend development of an ongoing B2B SaaS product and integration with multiple open-source libraries. A significant aspect of my role involves addressing challenges related to state management conflicts. I have implemented a modular and reusable state architecture using Zustand, leading to substantial improvements in code maintainability.",
+    icon: React.createElement(Briefcase),
+    date: "Dec 2023 - Current",
+  },
+  {
     title: "Software Engineer",
     location: "SG Hired",
     techstack: ['React Native','Laravel', 'Firebase'],

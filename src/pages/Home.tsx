@@ -9,7 +9,7 @@ export default function Home() {
 
     const a = document.createElement("a");
     a.href = fileUrl;
-    a.download = "resume.pdf";
+    a.download = "ng_chin_chia_resume_2024.pdf";
     a.click();
 
     
