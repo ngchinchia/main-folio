@@ -1,13 +1,14 @@
 import { Briefcase } from "lucide-react";
 import React from "react";
 import task from "../assets/taskmanagement.png";
+import starstruck from "../assets/starstruck.png";
 import brewbubble from "../assets/brewbubble2.png";
 import portfolio from "../assets/portfolio_website.png";
 import "react-vertical-timeline-component/style.min.css";
 
 export const experienceData = [
   {
-    title: "Fronend Developer Intern",
+    title: "Frontend Developer Intern",
     location: "StarStruck",
     techstack: ['NextJS','Tailwind','Zustand','Framer'],
     description:
@@ -45,6 +46,15 @@ export const experienceData = [
 ];
 
 export const projectsData = [
+  {
+    title: "StarStruck",
+    description:
+      "Developing a SaaS product for a start-up called StarStruck that targets B2B businesses, providing a comprehensive solution for marketplace analysis, data visualization with charts, comparison and optimization.",
+    tags: ["NextJS", "Tailwind", "MemberStack"],
+    imageUrl: starstruck,
+    demoUrl:"https://app.getstarstruck.com/", 
+    sourceCodeUrl:""
+  },
   {
     title: "SimplyTask",
     description:

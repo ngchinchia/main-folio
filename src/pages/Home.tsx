@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Home() {
   const handleDownload = () => {
-    const fileUrl = process.env.PUBLIC_URL + "resume.pdf";
+    const fileUrl = process.env.PUBLIC_URL + "ng_chin_chia_resume_2024.pdf";
 
     const a = document.createElement("a");
     a.href = fileUrl;
